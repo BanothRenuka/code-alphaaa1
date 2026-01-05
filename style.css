@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b30000; /* RED BACKGROUND */
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card.full {
+    grid-column: 1 / -1;
+}
+
+canvas {
+    max-height: 300px;
+}
